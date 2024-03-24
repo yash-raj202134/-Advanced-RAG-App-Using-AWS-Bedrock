@@ -24,4 +24,4 @@ response=bedrock.invoke_model(
 
 response_body=json.loads(response.get("body").read())
 repsonse_text=response_body['generation']
-print(repsonse_text)
+# print(repsonse_text)
