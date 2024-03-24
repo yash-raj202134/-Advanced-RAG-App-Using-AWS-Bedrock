@@ -9,7 +9,7 @@ import streamlit as st
 from langchain_community.embeddings import BedrockEmbeddings
 from langchain.llms.bedrock import Bedrock
 
-## Data Ingestion
+## Data Ingestion part
 
 import numpy as np
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -129,11 +129,11 @@ def main():
             st.write(get_response_llm(llm,faiss_index,user_question))
             st.success("Done")
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
 
 
-
+main()
 
 
 
